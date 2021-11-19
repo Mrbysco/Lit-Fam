@@ -1,6 +1,8 @@
 package com.mrbysco.litfam.mixin;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mrbysco.litfam.config.LitConfig;
+import com.mrbysco.litfam.util.BrightUtil;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.entity.Entity;
@@ -17,7 +19,7 @@ public class EntityRendererManagerMixin<T extends Entity>  {
 			target = "Lnet/minecraft/client/renderer/entity/EntityRenderer;render(Lnet/minecraft/entity/Entity;FFLcom/mojang/blaze3d/matrix/MatrixStack;Lnet/minecraft/client/renderer/IRenderTypeBuffer;I)V"),
 			index = 5)
 	private int changeShadowSize(T entity, float p_225623_2_, float p_225623_3_, MatrixStack matrixStack, IRenderTypeBuffer typeBuffer, int brightness) {
-		if(entity instanceof LivingEntity) {
+		if(entity instanceof LivingEntity && (LitConfig.COMMON.alwaysFullBright.get() || BrightUtil.shouldBeBright(entity))) {
 			return 15728880;
 		}
 		return brightness;
