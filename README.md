@@ -1,4 +1,4 @@
-# I's Lit Fam #
+# It's Lit Fam #
 
 ## About ##
 It's Lit Fam is a mod that makes entities render full-bright and makes nearby entities glow.
