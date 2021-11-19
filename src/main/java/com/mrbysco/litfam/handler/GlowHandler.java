@@ -16,7 +16,7 @@ public class GlowHandler {
 	@SubscribeEvent
 	public void onPlayerTick(PlayerTickEvent event) {
 		PlayerEntity player = event.player;
-		if(player != null && !player.isSpectator() && player.level.getGameTime() % 5 == 0) {
+		if(player != null && !player.isSpectator() && player.level.getGameTime() % 5 == 0 && LitConfig.COMMON.glowEnabled.get()) {
 			final int range = LitConfig.COMMON.glowRange.get();
 			final EntityPredicate closePredicate = (new EntityPredicate()).range(range);
 			final AxisAlignedBB closeBox = player.getBoundingBox().inflate(range, 5.0D, range);

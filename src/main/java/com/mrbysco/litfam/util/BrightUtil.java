@@ -7,6 +7,6 @@ import net.minecraft.entity.Entity;
 public class BrightUtil {
 	public static boolean shouldBeBright(Entity entity) {
 		final Minecraft minecraft = Minecraft.getInstance();
-		return minecraft.player == entity || minecraft.player.distanceTo(entity) <= LitConfig.COMMON.fullBrightRange.get();
+		return minecraft.player != null && (minecraft.player == entity || minecraft.player.distanceTo(entity) <= LitConfig.COMMON.fullBrightRange.get());
 	}
 }

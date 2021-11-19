@@ -13,6 +13,7 @@ public class LitConfig {
 	public static class Common {
 		public final BooleanValue alwaysFullBright;
 		public final IntValue fullBrightRange;
+		public final BooleanValue glowEnabled;
 		public final IntValue glowRange;
 
 		Common(ForgeConfigSpec.Builder builder) {
@@ -26,6 +27,10 @@ public class LitConfig {
 			fullBrightRange = builder
 					.comment("Defines the range in which mobs will show full-bright (Unless \"alwaysFullBright\" is set to true) [Default: 32] ")
 					.defineInRange("fullBrightRange", 32, 1, Integer.MAX_VALUE);
+
+			glowEnabled = builder
+					.comment("Defines if mobs should glow when in configured range [Default: true]")
+					.define("glowEnabled", true);
 
 			glowRange = builder
 					.comment("Defines how close a mob has to be to start glowing [Default: 6]")
