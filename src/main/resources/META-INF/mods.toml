@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+issueTrackerURL="https://github.com/Mrbysco/LitFam"
+license="MIT"
+
+[[mods]]
+modId="litfam"
+version="${file.jarVersion}"
+displayName="It's Lit Fam"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/litfam"
+authors="Mrbysco"
+description='''
+These entities are lit fam
+'''
+[[dependencies.litfam]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.16.5,1.17)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.litfam]]
+modId="forge"
+mandatory=true
+versionRange="[36.2.5,37)"
+ordering="NONE"
+side="BOTH"

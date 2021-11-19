@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8.4",
+  "package": "com.mrbysco.litfam.mixin",
+  "refmap": "litfam.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "EntityRendererManagerMixin"
+  ],
+  "injectors": {
+	"defaultRequire": 1
+  }
+}
