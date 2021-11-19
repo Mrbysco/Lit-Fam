@@ -1,3 +1,5 @@
+[![build](https://github.com/Mrbysco/Lit-Fam/actions/workflows/build.yml/badge.svg)](https://github.com/Mrbysco/Lit-Fam/actions/workflows/build.yml) [![](http://cf.way2muchnoise.eu/versions/548214.svg)](https://www.curseforge.com/minecraft/mc-mods/lit-fam)
+
 # It's Lit Fam #
 
 ## About ##
