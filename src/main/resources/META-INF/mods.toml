@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[36,)"
+loaderVersion="[37,)"
 issueTrackerURL="https://github.com/Mrbysco/LitFam"
 license="MIT"
 
@@ -15,12 +15,12 @@ These entities are lit fam
 [[dependencies.litfam]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.16.5,1.17)"
+versionRange="[1.17,1.18)"
 ordering="NONE"
 side="BOTH"
 [[dependencies.litfam]]
 modId="forge"
 mandatory=true
-versionRange="[36.2.5,37)"
+versionRange="[37,38)"
 ordering="NONE"
 side="BOTH"
