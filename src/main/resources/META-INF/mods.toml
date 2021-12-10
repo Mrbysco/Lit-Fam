@@ -21,6 +21,6 @@ side="BOTH"
 [[dependencies.litfam]]
 modId="forge"
 mandatory=true
-versionRange="[38,39)"
+versionRange="[38.0.6,40)"
 ordering="NONE"
 side="BOTH"
