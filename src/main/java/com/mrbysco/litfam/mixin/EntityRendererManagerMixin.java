@@ -18,10 +18,10 @@ public class EntityRendererManagerMixin<T extends Entity> {
 					value = "INVOKE",
 					target = "Lnet/minecraft/client/renderer/entity/EntityRenderer;render(Lnet/minecraft/world/entity/Entity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"),
 			index = 5)
-	private int changeShadowSize(T entity, float p_225623_2_, float p_225623_3_, PoseStack matrixStack, MultiBufferSource typeBuffer, int brightness) {
+	private int changeShadowSize(T entity, float entityYaw, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int pavketLight) {
 		if (entity instanceof LivingEntity && (LitConfig.COMMON.alwaysFullBright.get() || BrightUtil.shouldBeBright(entity))) {
 			return 15728880;
 		}
-		return brightness;
+		return pavketLight;
 	}
 }
