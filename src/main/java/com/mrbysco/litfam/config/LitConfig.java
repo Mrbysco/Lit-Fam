@@ -56,6 +56,6 @@ public class LitConfig {
 
 	@SubscribeEvent
 	public static void onFileChange(final ModConfigEvent.Reloading configEvent) {
-		LitFam.LOGGER.warn("It's Lit Fam's config just got changed on the file system!");
+		LitFam.LOGGER.debug("It's Lit Fam's config just got changed on the file system!");
 	}
 }
