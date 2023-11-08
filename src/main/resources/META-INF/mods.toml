@@ -1,13 +1,13 @@
 modLoader="javafml"
-loaderVersion="[46,)"
-issueTrackerURL="https://github.com/Mrbysco/LitFam/issues"
+loaderVersion="[1,)"
+issueTrackerURL="https://github.com/Mrbysco/Lit-Fam/issues"
 license="MIT"
 
 [[mods]]
 modId="litfam"
 version="${file.jarVersion}"
 displayName="It's Lit Fam"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/litfam"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/lit-fam"
 authors="Mrbysco"
 description='''
 These entities are lit fam
