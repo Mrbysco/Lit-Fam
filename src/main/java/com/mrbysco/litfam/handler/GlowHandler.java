@@ -9,14 +9,14 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.neoforge.event.TickEvent.PlayerTickEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 import java.util.List;
 
 public class GlowHandler {
 	@SubscribeEvent
-	public void onPlayerTick(PlayerTickEvent event) {
-		Player player = event.player;
+	public void onPlayerTick(PlayerTickEvent.Pre event) {
+		Player player = event.getEntity();
 		Level level = player.level();
 		if (player != null && !player.isSpectator() && level.getGameTime() % 5 == 0 && LitConfig.COMMON.glowEnabled.get()) {
 			final int range = LitConfig.COMMON.glowRange.get();
