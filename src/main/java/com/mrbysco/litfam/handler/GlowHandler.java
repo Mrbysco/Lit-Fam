@@ -1,13 +1,10 @@
 package com.mrbysco.litfam.handler;
 
 import com.mrbysco.litfam.config.LitConfig;
-import net.minecraft.world.Difficulty;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
@@ -34,7 +31,7 @@ public class GlowHandler {
 	public void onPlayerTick(PlayerTickEvent.Pre event) {
 		Player player = event.getEntity();
 		Level level = player.level();
-		if (player != null && !player.isSpectator() && level.getGameTime() % 5 == 0 && LitConfig.COMMON.glowEnabled.get()) {
+		if (!player.isSpectator() && level.getGameTime() % 5 == 0 && LitConfig.COMMON.glowEnabled.get()) {
 			final int range = LitConfig.COMMON.glowRange.get();
 			final AABB closeBox = player.getBoundingBox().inflate(range, 5.0D, range);
 
