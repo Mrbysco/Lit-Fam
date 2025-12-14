@@ -3,7 +3,6 @@ package com.mrbysco.litfam.mixin;
 import com.mrbysco.litfam.config.LitConfig;
 import com.mrbysco.litfam.util.BrightUtil;
 import net.minecraft.client.renderer.entity.EntityRenderer;
-import net.minecraft.client.renderer.entity.state.EntityRenderState;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
