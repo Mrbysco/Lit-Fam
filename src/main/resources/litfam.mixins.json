@@ -3,7 +3,7 @@
   "minVersion": "0.8.5",
   "package": "com.mrbysco.litfam.mixin",
   "target": "@env(DEFAULT)",
-  "compatibilityLevel": "JAVA_21",
+  "compatibilityLevel": "JAVA_25",
   "client": [
     "EntityRendererMixin"
   ],
